@@ -17,6 +17,9 @@ export class ArtistaComponent{
         this.router.params.subscribe( params =>{
               //console.log(params['id']);
               this.getArtista(params['id']);
+
+              this.getTopTracks(params['id']);
+
         });
     }
 
@@ -33,6 +36,6 @@ export class ArtistaComponent{
 
         this.spotify.getTopTracks( id ).subscribe( topTracks => {
               console.log(topTracks);
-        })
+        });
      }       
 }
