@@ -40,7 +40,7 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 @NgModule({
   imports:      [ BrowserModule, HttpClientModule, FormsModule, RouterModule.forRoot(ROUTES, {useHash:true}) ],
-  declarations: [ AppComponent, HelloComponent, HomeComponent, ArtistaComponent, SearchComponent, NavbarComponent, NoimagePipe, TarjetasComponent, LoadingComponent ],
+  declarations: [ AppComponent, HelloComponent, HomeComponent, ArtistaComponent, SearchComponent, NavbarComponent, NoimagePipe, TarjetasComponent, LoadingComponent, DomseguroPipe ],
   providers:[],
   bootstrap:    [ AppComponent ]
 })
