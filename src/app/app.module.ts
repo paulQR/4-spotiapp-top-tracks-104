@@ -33,6 +33,7 @@ import { ROUTES } from './app.routes';
 
 // Pipes
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 // tarjetas
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
