@@ -28,4 +28,11 @@ export class ArtistaComponent{
               this.loadingArtist = false;
         })
      }  
+
+     getTopTracks(id: string){
+
+        this.spotify.getTopTracks( id ).subscribe( topTracks => {
+              console.log(topTracks);
+        })
+     }       
 }
