@@ -17,7 +17,7 @@
     </div>
 </div> 
 
-<div class="row">
+<div class="row m-5">
     <div class="col">
         <table class="table">
             <thead>
@@ -30,11 +30,15 @@
             </thead>
 
             <tbody>
-                <tr>
-                    <td>Foto</td>
-                    <td>Album</td>
-                    <td>Canción</td>
-                    <td>Vista Previa</td>
+                <tr *ngFor="let track of topTracks">
+                    <td>
+                        <img [src]="track.album.images | noimage" class="img-thumb">
+                    </td>
+                    <td>{{ track.album.name}}</td>
+                    <td>{{ track.name}}</td>
+                    <td>
+                        <audio [src]="track.preview_url"></audio>
+                    </td>
                 </tr>
 
             </tbody>
